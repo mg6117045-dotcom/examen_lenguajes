@@ -21,3 +21,14 @@ int es_digito(char c) {
 
     return estado;
 }
+
+int es_operador(char c) {
+    int estado = 0;
+
+    if (c == '+' || c == '-' || c == '*' || c == '/') {
+        estado = 1;
+    }
+
+    return estado;
+}
+
