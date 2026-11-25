@@ -32,3 +32,22 @@ int es_operador(char c) {
     return estado;
 }
 
+int es_parentesis(char c) {
+    int estado = 0;
+
+    if (c == '(' || c == ')') {
+        estado = 1;
+    }
+
+    return estado;
+}
+
+int es_llave(char c){
+ int estado = 0;
+
+    if (c == '{' || c == '}') {
+        estado = 1;
+    }
+
+    return estado;
+}
