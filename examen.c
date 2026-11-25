@@ -51,3 +51,20 @@ int es_llave(char c){
 
     return estado;
 }
+
+int es_asignacion(char c) {
+    int estado = 0;
+
+     if (c == '=')  {
+        estado = 1;
+    }
+
+    return estado;
+}
+
+
+
+
+
+
+
