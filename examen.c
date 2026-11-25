@@ -63,6 +63,17 @@ int es_asignacion(char c) {
 }
 
 
+int es_tipo(char *token) {
+    int estado = 0;
+
+    if (strcmp(token, "int") == 0 ||strcmp(token, "float") == 0 ||strcmp(token, "char") == 0 ||strcmp(token, "double") == 0 ||strcmp(token, "void") == 0) {
+        estado = 1;
+    }
+
+    return estado;
+}
+
+
 
 
 
